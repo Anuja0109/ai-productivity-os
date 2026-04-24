@@ -1,0 +1,90 @@
+ai-productivity-os/
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   │
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   ├── database.py
+│   │   │   ├── security.py
+│   │   │   ├── redis.py
+│   │   │   └── celery.py
+│   │   │
+│   │   ├── models/
+│   │   │   ├── user.py
+│   │   │   ├── task.py
+│   │   │   └── document.py
+│   │   │
+│   │   ├── schemas/
+│   │   │   ├── user_schema.py
+│   │   │   ├── task_schema.py
+│   │   │   └── ai_schema.py
+│   │   │
+│   │   ├── api/
+│   │   │   ├── deps.py
+│   │   │   └── v1/
+│   │   │       ├── auth.py
+│   │   │       ├── tasks.py
+│   │   │       ├── ai.py
+│   │   │       └── documents.py
+│   │   │
+│   │   ├── services/
+│   │   │   ├── auth_service.py
+│   │   │   ├── task_service.py
+│   │   │   ├── ai_service.py
+│   │   │   └── document_service.py
+│   │   │
+│   │   ├── ai/
+│   │   │   ├── rag_pipeline.py
+│   │   │   ├── agent.py
+│   │   │   └── embeddings.py
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── logger.py
+│   │   │   └── helpers.py
+│   │
+│   ├── tests/
+│   │   ├── conftest.py
+│   │   ├── test_auth.py
+│   │   ├── test_tasks.py
+│   │   └── test_ai.py
+│   │
+    ├── .flake8
+    ├── pyproject.toml
+    ├── requirements.txt
+│   ├── .env
+    ├── .dockerignore
+│   └── docker-compose.yml
+│
+├── frontend/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── dashboard/
+│   │   ├── chat/
+│   │   └── auth/
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── chat/
+│   │   └── dashboard/
+│   │
+│   ├── services/
+│   │   ├── api.ts
+│   │   ├── auth.ts
+│   │   └── ai.ts
+│   │
+│   ├── hooks/
+│   ├── store/
+│   ├── utils/
+│   └── types/
+│
+├── infra/
+│   ├── nginx/
+│   │   └── nginx.conf
+│   └── terraform/ (optional later)
+│
+├── .env
+├── .gitignore
+└── README.md
